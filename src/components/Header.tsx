@@ -4,7 +4,7 @@ import '../styles/Header.scss';
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="header__container">
                 <a href='../' className="header__container-logo">
                     <h1 className="header__container-logo-title">PetStory online</h1>
@@ -23,7 +23,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
     );
 };
 

@@ -1,0 +1,115 @@
+.watch-online{
+  display: flex;
+  height: 780px;
+  padding-top: 80px;
+  background-image: url('../assets/image/Giant Panda.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.watch-online-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100%;
+  padding-inline: min(max((100vw - 1160px) / 2, 30px), 220px);
+}
+
+.watch-online-container-circle{
+  width: 465px;
+  height: 465px;
+  margin-top: 12px;
+  margin-left: 587px;
+  border-radius: 100%;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.watch-online-container-circle-text{
+  display: flex;
+  flex-direction: column;
+  width: 500.31px;
+  height: 400px;
+  margin-top: 74px;
+  margin-left: 73px;
+  font-size: 106.496px;
+  font-weight: 700;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  & > span{
+    color: #FFEE2E;
+  }
+}
+
+@media (max-width: 1200px) {
+  .watch-online{
+    height: 584px;
+    background-image: url("../assets/image/Giant Panda_small_desctop.png");
+  }
+
+  .watch-online-container-circle{
+    width: 367px;
+    height: 367px;
+    margin-top: -10px;
+    margin-left: 45.3191489362%;
+  }
+
+  .watch-online-container-circle-text{
+    width: 400.25px;
+    height: 320px;
+    margin-top: 53.8px;
+    margin-left: 58px;
+    font-size: 85px;
+  }
+}
+
+@media (max-width: 850px) {
+  .watch-online {
+    height: 373px;
+    padding-top: 34px;
+  }
+  .watch-online-container-circle{
+    width: 237.6px;
+    height: 237.6px;
+    margin-top: 10px;
+    margin-left: 51.7%;
+  }
+  .watch-online-container-circle-text{
+    width: 255.64px;
+    height: 204.38px;
+    margin-top: 37.81px;
+    margin-left: 37.3px;
+    font-size: 54.2894px;
+  }
+}
+
+@media (max-width: 800px) {
+  .watch-online-container{
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 612px) {
+  .watch-online {
+    height: 187px;
+    padding-top: 0;
+    transform: translateY(34px);
+  }
+  .watch-online-container-circle{
+    width: 119.09px;
+    height: 119.09px;
+    margin-top: 22.17px;
+    margin-left: 50.7%;
+  }
+  .watch-online-container-circle-text{
+    width: 128.13px;
+    height: 102.44px;
+    margin-top: 18.95px;
+    margin-left: 18.7px;
+    font-size: 28px;
+  }
+}
+

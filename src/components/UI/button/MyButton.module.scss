@@ -1,0 +1,42 @@
+.myBtn{
+  padding: 0 1px 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: 763px;
+  margin-top: 69px;
+  width: 298px;
+  height: 54px;
+  min-height: 54px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .myBtn{
+    margin-top: 47px;
+    margin-left: 56.914893617%;
+  }
+}
+
+@media (max-width: 850px) {
+  .myBtn{
+    margin-top: -3px;
+    margin-left: 3.157812%;
+  }
+}
+
+@media (max-width: 612px) {
+  .myBtn{
+    margin: 0;
+    align-self: center;
+    transform: translateY(67px);
+  }
+}

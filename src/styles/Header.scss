@@ -79,6 +79,29 @@
             position: absolute;
             right: 0;
           }
+          a {
+            color: #FFF;
+            text-decoration: none;
+
+            &:hover {
+              font-weight: 600;
+              background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            &:active {
+              background: var(--orange, linear-gradient(121deg, #F9804B 0%, #FE9013 100%));
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+
+          & > .active {
+            background: var(--orange, linear-gradient(121deg, #F9804B 0%, #FE9013 100%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
       }
     }

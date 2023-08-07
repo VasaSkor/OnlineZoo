@@ -1,0 +1,175 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-block: 14px;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 1600px;
+    height: 100%;
+    padding-inline: min(max((100vw - 1160px) / 2, 30px), 220px);
+
+    &-logo {
+      display: flex;
+      width: 82px;
+      min-width: 82px;
+      height: 52px;
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      position: relative;
+
+      &:before{
+        content: url('../assets/icon/bamboo.svg');
+        width: 10.03px;
+        height: 20.98px;
+        position: absolute;
+        left: 9.8px;
+        top: 22.64px;
+      }
+      &-title{
+        width: 72.49px;
+        height: 44.91px;
+        margin: 0;
+        font-size: 19.0145px;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: none;
+        text-align: center;
+        color: #FFFFFF;
+        position: absolute;
+        left: 3.75px;
+        top: 3.55px;
+
+      }
+    }
+
+    &-nav {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &-menu__burger{
+        display: none;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 63px;
+        position: relative;
+
+        &-item {
+          margin-left: 58px;
+          font-size: 16px;
+          line-height: 140%;
+          font-weight: 500;
+          color: #FFFFFF;
+
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      &-nav {
+        &-list {
+          &-item {
+            margin-left: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    padding: 2.29px 0 2.68px;
+    &__container {
+      &-logo {
+        width: 46.93px;
+        min-width: 46.93px;
+        height: 29.03px;
+        margin-left: -9.93px;
+        border: none;
+
+        &:before{
+          width: 7.54px;
+          height: 13.56px;
+          left: 3.48px;
+          top: 11.99px;
+        }
+        &-title{
+          width: 46.86px;
+          height: 29.03px;
+          font-size: 12.2899px;
+          font-weight: 400;
+          line-height: 120%;
+          left: -0.25px;
+          top: 1.22px;
+        }
+      }
+  &-nav {
+    &-list {
+      display: none;
+    }
+    &-menu__burger{
+      display: flex;
+      width: 18px;
+      height: 10px;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 2.29px 0 2.68px;
+
+    &__container {
+      &-logo {
+        width: 46.93px;
+        min-width: 46.93px;
+        height: 29.03px;
+        margin-left: -19.93px;
+        border: none;
+      }
+
+      &-nav {
+        &-list {
+          display: none;
+        }
+
+        &-menu__burger {
+          display: flex;
+          width: 18px;
+          height: 10px;
+          cursor: pointer;
+          position: absolute;
+          right: 10px;
+          top: 11px;
+        }
+      }
+    }
+  }
+}
+
+
+

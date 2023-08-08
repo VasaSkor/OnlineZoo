@@ -11,7 +11,7 @@ const WatchOnline = () => {
                         Watch your <span>favorite</span> animal online
                     </span>
                 </div>
-            <MyButton/>
+            <MyButton text='watch online' id="watch online"/>
             </div>
         </section>
     );

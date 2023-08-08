@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './MyButton.module.scss';
 
-const MyButton = () => {
+interface MyButtonProps {
+    text: string;
+    id: string;
+}
+
+const MyButton: React.FC<MyButtonProps> = ({ text, id }) => {
     return (
-        <button className={styles.myBtn}>
-            watch online
+        <button id={id} className={styles.myBtn}>
+            {text}
         </button>
     );
 };

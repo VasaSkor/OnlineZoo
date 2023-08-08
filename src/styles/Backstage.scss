@@ -1,0 +1,174 @@
+.backstage{
+  display: flex;
+  justify-content: center;
+  background: url("../assets/image/flower.png") right no-repeat;
+  background-position-y: 12px
+}
+
+.backstage__container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100%;
+  padding-inline: min(max((100vw - 1160px) / 2, 30px), 220px);
+}
+
+.backstage__content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 140px 0 176px;
+}
+
+.backstage__content-img{
+  width: 609px;
+  height: 403px;
+}
+
+.backstage__content-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 87px;
+  padding-top: 1px;
+  color: #333B41;
+
+  & > h2{
+    margin-bottom: 21px;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #333B41;
+  }
+
+  & > p:nth-child(2){
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+  }
+
+  & > p:nth-child(4){
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+  }
+}
+
+.backstage__content-subtitle{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 54px;
+  margin-bottom: 34px;
+  color: #333B41;
+}
+
+@media (max-width: 1540px) {
+  .backstage{
+    background: none
+  }
+}
+
+@media (max-width: 1300px) {
+  .backstage__content{
+    margin: 100px 0 152px;
+  }
+  .backstage__content-img{
+    width: 455px;
+    height: 408px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .backstage__content-text{
+    margin-left: 31px;
+  }
+}
+
+@media (max-width: 800px) {
+  .backstage__container{
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .backstage{
+    background: url("../assets/image/flower_tablet.png") right no-repeat;
+    background-position-y: -6px
+  }
+
+  .backstage__content{
+    margin: 60px 0 80px;
+  }
+  .backstage__content-img{
+    display: none;
+  }
+  .backstage__content-text{
+    height: 367px;
+    width: 77.34375%;
+    margin-left: 24px;
+  }
+  .backstage__content-subtitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 612px) {
+  .backstage{
+    background: url("../assets/image/flower_mobile.png") right no-repeat;
+    background-position-y: 72px
+  }
+  .backstage__content{
+    margin: 140px 0 60px;
+  }
+
+  .backstage__content-text{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-width: 300px;
+    margin-left: 10px;
+
+    & > h2{
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    & > p:nth-child(2){
+      margin-left: 2px;
+      max-width: 297px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    & > p:nth-child(4){
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      max-width: 300px;
+      margin-left: 0;
+    }
+  }
+  .backstage__content-subtitle{
+    margin: 20px 0 9px 2px;
+  }
+}
+
+@media (max-width: 510px) {
+  .backstage__content-text{
+    align-items: flex-start;
+    width: 90.75%;
+    text-align: left;
+  }
+}
+
+

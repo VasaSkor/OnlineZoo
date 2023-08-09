@@ -3,6 +3,7 @@ import WatchOnline from "../WatchOnline";
 import Backstage from "../Backstage";
 import Pets from "../Pets";
 import PickAndFeed from "../PickAndFeed";
+import Testimonials from "../Testimonials";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Backstage/>
             <Pets/>
             <PickAndFeed/>
+            <Testimonials/>
         </main>
     );
 };

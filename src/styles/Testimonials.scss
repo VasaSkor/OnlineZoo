@@ -1,0 +1,214 @@
+.testimonials{
+  padding-top: 140px;
+  padding-bottom: 315px;
+  background-position-y: 126%;
+  background: url("../assets/image/leav_foto.png") bottom right no-repeat;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.testimonials__container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100%;
+  padding-inline: min(max((100vw - 1160px) / 2, 30px), 220px);
+}
+
+.testimonials__container-title{
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+}
+
+.testimonials__wrapper-cards{
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 47px;
+  gap: 29px;
+}
+
+.testimonials__wrapper-card{
+  width: 268px;
+  min-width: 268px;
+  max-height: 391px;
+  overflow: hidden;
+  padding: 15px 15px 19px 14px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(
+                  to right,
+                  #F1F3F2  0%,
+                  #F1F3F2  100%
+  ) padding-box,
+  linear-gradient(315.75deg,
+                  rgba(254, 189, 171, 0.74) 30.06%,
+                  rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
+  cursor: pointer;
+  transform: translateX(2000%);
+}
+
+.current{
+  transform: translateX(0);
+  transition: all 0.5s linear;
+}
+
+.testimonials__wrapper-card-header{
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonials__wrapper-card-header-text{
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 120%;
+
+  & > span{
+    color: #BDBDBD;
+  }
+
+  & > span:nth-child(1){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+  }
+
+  & > span:nth-child(3){
+    margin-right: 5px;
+  }
+}
+
+.testimonials__wrapper-card-main-text{
+  font-family: "Roboto", sans-serif;
+  width: 237px;
+  max-height: 309px;
+  margin-top: 10px;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+#testimonials_input{
+  align-self: center;
+  width: 599px;
+  height: 8px;
+  margin-top: 21px;
+  margin-bottom: 31px;
+}
+
+#feedback{
+  width: 298px;
+  height: 54px;
+  border-radius: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 1242px) {
+  .testimonials{
+    padding-top: 63px;
+    padding-bottom: 83px;
+    background: url("../assets/image/leav_foto_tablet.png") bottom right no-repeat;
+    background-position-y: 114%;
+  }
+
+  .testimonials__container-title{
+    margin-bottom: 10px;
+  }
+
+  .testimonials__wrapper{
+    height: 371px;
+    overflow: hidden;
+  }
+
+  .testimonials__wrapper-cards{
+    padding-inline: 20px;
+    flex-direction: column;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    row-gap: 0;
+    margin-top: 0;
+  }
+
+  .testimonials__wrapper-card{
+    width: 100%;
+    height: 109px;
+    margin-top: 15px;
+    padding: 15px 29px 8px 10px;
+  }
+
+  .testimonials__wrapper-card-main-text{
+    width: 100%;
+    height: 38px;
+    margin-left: 5px;
+    margin-top: 13px;
+  }
+
+  #testimonials_input{
+    display: none;
+  }
+
+  #feedback{
+    width: 240px;
+    height: 54px;
+    margin-top: 43px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonials__container{
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 612px) {
+  #feedback{
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 360px) {
+  .testimonials{
+    background-position-y: 106%;
+    padding-top: 30px;
+    padding-bottom: 0;
+    background: url("../assets/image/leav_foto_mobile.png") right bottom no-repeat;
+  }
+  .testimonials__container-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .testimonials__wrapper-cards{
+    padding-inline: 12px;
+  }
+
+  .testimonials__wrapper-card{
+    margin-top: 12px;
+    padding: 5px 29px 8px 10px;
+  }
+
+  .testimonials__wrapper-card-header-text{
+    margin-left: 6px;
+  }
+
+  #feedback{
+    margin-top: 31px;
+    margin-bottom: 83px;
+  }
+}
+
+

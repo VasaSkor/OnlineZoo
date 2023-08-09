@@ -2,6 +2,7 @@ import React from 'react';
 import WatchOnline from "../WatchOnline";
 import Backstage from "../Backstage";
 import Pets from "../Pets";
+import PickAndFeed from "../PickAndFeed";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <WatchOnline/>
             <Backstage/>
             <Pets/>
+            <PickAndFeed/>
         </main>
     );
 };

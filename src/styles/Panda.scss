@@ -1,0 +1,31 @@
+.panda{
+  height: 390px;
+  transform: translateY(80px);
+  background: url("../assets/image/panda_donate.png") no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .panda{
+    background: url("../assets/image/panda_donate_small.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 850px) {
+  .panda{
+    height: 335px;
+    background: url("../assets/image/panda_donate_tablet.png") no-repeat;
+    background-size: cover;
+    transform: translateY(34px);
+  }
+}
+
+@media (max-width: 320px) {
+  .panda{
+    height: 187px;
+    background: url("../assets/image/panda_donate_mobile.png") no-repeat;
+    background-size: cover;
+  }
+}
+

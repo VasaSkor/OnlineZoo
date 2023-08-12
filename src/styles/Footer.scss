@@ -453,6 +453,10 @@ footer{
 
     &-text{
       left: 35px;
+
+      &:first-child{
+        left: 35px;
+      }
     }
   }
 

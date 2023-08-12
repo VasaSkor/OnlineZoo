@@ -57,7 +57,9 @@ const PickAndFeed = () => {
                           </span>
                         </div>
                     </div>
-                    <MyButton id='feed' text='Feed a friend now'/>
+                    <NavLink to='/donate' end>
+                        <MyButton id='feed' text='Feed a friend now'/>
+                    </NavLink>
                 </div>
             </div>
         </section>

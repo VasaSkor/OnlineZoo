@@ -33,7 +33,9 @@ const Footer = () => {
                         </div>
                     </form>
                 </div>
-                <MyButton id='donate' text='donate for volunteers'/>
+                <NavLink to='/donate' end>
+                    <MyButton id='donate' text='donate for volunteers'/>
+                </NavLink>
                 <div className='footer__row'>
                     <nav className='footer__row-socials'>
                         <ul className='footer__row-socials-list'>

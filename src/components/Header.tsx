@@ -20,15 +20,31 @@ const Header = () => {
                                 About
                             </NavLink>
                         </li>
-                        <li className="header__container-nav-list-item">Map</li>
-                        <li className="header__container-nav-list-item">Zoos</li>
+                        <li className="header__container-nav-list-item">
+                            <Link to='https://www.google.com/maps'>
+                                Map
+                            </Link>
+                        </li>
+                        <li className="header__container-nav-list-item">
+                            <Link to='https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA'>
+                            Zoos
+                            </Link>
+                        </li>
                         <li className="header__container-nav-list-item">
                             <NavLink to='/donate' end>
                                 Donate
                             </NavLink>
                         </li>
-                        <li className="header__container-nav-list-item">Contact us</li>
-                        <li className="header__container-nav-list-item">Designed by ©</li>
+                        <li className="header__container-nav-list-item">
+                            <Link to='https://github.com/VasaSkor'>
+                            Contact us
+                            </Link>
+                        </li>
+                        <li className="header__container-nav-list-item">
+                            <Link to='https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?type=design&node-id=0-1&mode=design&t=syLRuxBa9haI2p4G-0'>
+                            Designed by ©
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

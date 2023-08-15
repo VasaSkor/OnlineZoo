@@ -1,20 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import burger from '../assets/icon/burger_menu.svg'
 import { Link, NavLink } from 'react-router-dom';
 import '../styles/Header.scss';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleBurgerClick = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
-        <header className="header">
+        <header className={`header ${menuOpen ? 'open' : ''}`}>
             <div className="header__container">
                 <Link to='/' className="header__container-logo">
                     <h1 className="header__container-logo-title">PetStory online</h1>
                 </Link>
-                <nav className="header__container-nav">
-                    <img className='header__container-nav-menu__burger'
-                         src={burger}
-                         alt='burger_menu_icon'/>
-                    <ul className="header__container-nav-list">
+                <img
+                    className={`header__container-nav-menu__burger`}
+                    src={burger}
+                    alt='burger_menu_icon'
+                    onClick={handleBurgerClick}
+                />
+                {menuOpen && (
+                    <div className="menu-overlay" onClick={closeMenu}></div>
+                )}
+                <nav className={`header__container-nav`}>
+                    <ul className={`header__container-nav-list ${menuOpen ? 'open' : ''}`}>
                         <li className="header__container-nav-list-item">
                             <NavLink to='/' end>
                                 About
